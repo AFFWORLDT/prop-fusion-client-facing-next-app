@@ -5,9 +5,9 @@ function Logo() {
   return (
     <div className="flex items-center gap-1 font-medium cursor-pointer">
       <span>
-        <Building className="items-center" />
+        <Building className="items-center text-rose-800" />
       </span>
-      <span className="text-sm flex">Prop Funsion</span>
+      <span className="text-sm flex text-rose-800">Prop Funsion</span>
     </div>
   );
 }

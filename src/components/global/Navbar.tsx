@@ -41,7 +41,7 @@ function Navbar() {
             {NAV_ITEMS.map((item) => (
               <Link href={item.href} key={item.label}>
                 <li
-                  className="text-black hover:text-purple-800 hover:bg-purple-50 px-3 py-1 rounded-full cursor-pointer transition-all duration-200"
+                  className="text-black hover:text-red-800 hover:bg-red-50 px-3 py-1 rounded-full cursor-pointer transition-all duration-200"
                   aria-label={item.label}
                 >
                   {item.label}
