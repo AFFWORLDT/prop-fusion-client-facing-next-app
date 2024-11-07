@@ -1,4 +1,5 @@
 import mongoose, { Mongoose } from "mongoose";
+import { inspect } from "util";
 
 const MONGO_URI = process.env.MONGODB_URL;
 if (!MONGO_URI) {
@@ -22,6 +23,12 @@ if (!chasedMongooseConn) {
 
 export async function dbConnect() {
   if (chasedMongooseConn.conn) {
+    console.log("Using existing database connection", inspect({
+      dbName: chasedMongooseConn.conn?.connections[0].name,
+      host: chasedMongooseConn.conn?.connections[0].host,
+      port: chasedMongooseConn.conn?.connections[0].port,
+      readyState: chasedMongooseConn.conn?.connections[0].readyState,
+    }, { depth: 1 }));
     return chasedMongooseConn.conn;
   }
 
@@ -32,7 +39,7 @@ export async function dbConnect() {
       bufferCommands: true,
       connectTimeoutMS: 30000,
     });
-
+    console.log("Database connected:", inspect(chasedMongooseConn.conn?.connections[0].readyState, { depth: 1 }));
   chasedMongooseConn.conn = await chasedMongooseConn.promise;
   return chasedMongooseConn.conn;
 }
