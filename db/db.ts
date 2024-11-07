@@ -15,6 +15,7 @@ interface MongooseConn {
 let chasedMongooseConn: MongooseConn = (global as any).mongoose;
 
 if (!chasedMongooseConn) {
+  console.log("Creating new database connection");
   chasedMongooseConn = (global as any).mongoose = {
     conn: null,
     promise: null,
@@ -39,7 +40,7 @@ export async function dbConnect() {
       bufferCommands: true,
       connectTimeoutMS: 30000,
     });
-    console.log("Database connected:", inspect(chasedMongooseConn.conn?.connections[0].readyState, { depth: 1 }));
+    console.log("Database connected:");
   chasedMongooseConn.conn = await chasedMongooseConn.promise;
   return chasedMongooseConn.conn;
 }
