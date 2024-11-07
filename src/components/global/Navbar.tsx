@@ -38,7 +38,8 @@ async function Navbar() {
   const { userId } = await auth();
 
   return (
-    <header className="px-4 py-4 shadow">
+    <header className="px-4 py-4 shadow sticky top-0 z-[999] bg-white">
+      {" "}
       <nav className="flex justify-between items-center">
         <div className="flex space-x-5 items-center">
           <div className="logo-container">
@@ -49,8 +50,7 @@ async function Navbar() {
               <Link href={item.href} key={item.label}>
                 <li
                   className="text-black hover:text-red-800 hover:bg-red-50 px-3 py-1 rounded-full cursor-pointer transition-all duration-200"
-                  aria-label={item.label}
-                >
+                  aria-label={item.label}>
                   {item.label}
                 </li>
               </Link>
@@ -97,8 +97,8 @@ async function Navbar() {
                   <Logo />
                 </SheetTitle>
                 <SheetDescription id="dialog-description">
-                <span id='dialog-description'></span>
-              </SheetDescription>
+                  <span id="dialog-description"></span>
+                </SheetDescription>
                 <div className="flex justify-center">
                   <Button className="text-sm" variant="outline">
                     Switch to CRM
@@ -126,8 +126,7 @@ async function Navbar() {
                       <Link href={item.href}>
                         <h3
                           className="mb-4 text-xl text-gray-600 cursor-pointer"
-                          aria-label={item.label}
-                        >
+                          aria-label={item.label}>
                           {item.label}
                         </h3>
                       </Link>
