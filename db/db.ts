@@ -1,6 +1,6 @@
 import mongoose, { Mongoose } from "mongoose";
 
-const MONGO_URI = process.env.MONGODB_URI;
+const MONGO_URI = process.env.MONGODB_URL;
 if (!MONGO_URI) {
   throw new Error(
     "Please define the MONGODB_URI environment variable inside .env.local"
