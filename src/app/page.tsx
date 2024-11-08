@@ -1,5 +1,6 @@
 import About from "@/components/home/About";
 import Clients from "@/components/home/Clients";
+import Contact from "@/components/home/Contact";
 import Hero from "@/components/home/Hero";
 import PopularAreas from "@/components/home/PopularAreas";
 import Properties from "@/components/home/Properties";
@@ -15,6 +16,7 @@ function Home() {
      <Properties/>
      <Services/>
      <Clients/>
+     <Contact/>
     </>
 
     
