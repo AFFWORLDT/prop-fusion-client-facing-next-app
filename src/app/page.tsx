@@ -1,3 +1,4 @@
+import Footer from "@/components/global/Footer";
 import About from "@/components/home/About";
 import Clients from "@/components/home/Clients";
 import Contact from "@/components/home/Contact";
@@ -17,6 +18,7 @@ function Home() {
      <Services/>
      <Clients/>
      <Contact/>
+     <Footer/>
     </>
 
     
