@@ -3,7 +3,7 @@ import React from "react";
 const PopularAreas = () => {
   return (
     <div>
-      <section className="lg:w-[90%] w-full h-fit m-auto bg-cover bg-center rounded-xl flex justify-center flex-col items-center lg:px-20 px-6 py-20 gap-20">
+      <section className="lg:w-[90%] bg-red-100 w-full h-fit m-auto bg-cover bg-center rounded-xl flex justify-center flex-col items-center lg:px-20 px-6 py-20 gap-20">
         <div
           id="top"
           className="w-full grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-8">

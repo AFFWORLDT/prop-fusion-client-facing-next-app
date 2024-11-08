@@ -48,7 +48,7 @@ const Hero = () => {
               name="selectOption"
               id="selectOption"
               className="bg-white p-2 border-b-[1px] w-full mt-2 border-[#c9c7c1] text-gray-500 text-md">
-              <option value="" disabled selected>
+              <option value="Option1" disabled>
                 Select Property
               </option>
               <option value="Option1">Rentals</option>
