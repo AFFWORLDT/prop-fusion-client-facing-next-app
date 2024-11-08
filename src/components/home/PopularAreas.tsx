@@ -27,7 +27,7 @@ const PopularAreas = () => {
               </span>
             </div>
             <div
-              style={{ backgroundImage: "url('/images/area2.jpg')"  }}
+              style={{ backgroundImage: "url('/images/area2.jpg')" }}
               className="h-[400px] bg-cover bg-center rounded-xl">
               <span className="hidden">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -49,7 +49,7 @@ const PopularAreas = () => {
           id="bottom"
           className="flex flex-col w-full lg:justify-center lg:flex-row justify-start items-center gap-6 ">
           <div className="flex justify-center lg:items-center gap-8 w-full">
-            <h1 className="text-black text-7xl font-semibold dark:text-white ">
+            <h1 className="text-black text-7xl font-semibold dark:text-white">
               {" "}
               5K
             </h1>
@@ -60,8 +60,7 @@ const PopularAreas = () => {
             </h1>
           </div>
           <div className="flex justify-center lg:items-center gap-8 w-full">
-            <h1 className="text-black text-7xl font-semibold dark:text-white ">
-              {" "}
+            <h1 className="text-black text-7xl font-semibold dark:text-white">
               9K
             </h1>
             <h1 className="text-gray-500 text-[18px]">
@@ -71,14 +70,13 @@ const PopularAreas = () => {
             </h1>
           </div>
           <div className="flex justify-center lg:items-center gap-8 w-full">
-            <h1 className="text-black text-7xl font-semibold dark:text-white ">
-              {" "}
+            <h1 className="text-black text-7xl font-semibold dark:text-white">
               6K
             </h1>
             <h1 className="text-gray-500 text-[18px]">
               CLIENTS
               <br />
-              WE'VE SERVED
+              WE`VE SERVED
             </h1>
           </div>
         </div>
