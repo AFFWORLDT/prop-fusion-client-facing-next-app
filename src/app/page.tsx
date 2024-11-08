@@ -1,10 +1,21 @@
+import About from "@/components/home/About";
+import Hero from "@/components/home/Hero";
+import PopularAreas from "@/components/home/PopularAreas";
+import Properties from "@/components/home/Properties";
+import Services from "@/components/home/Services";
 import React from "react";
 
 function Home() {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <h1 className="text-3xl">This Is Home Page </h1>
-    </div>
+    <>
+     <Hero/>      
+     <About/>
+     <PopularAreas/>
+     <Properties/>
+     <Services/>
+    </>
+
+    
   );
 }
 
