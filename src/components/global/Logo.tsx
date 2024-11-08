@@ -7,7 +7,7 @@ function Logo() {
       <span>
         <Building className="items-center text-rose-800" />
       </span>
-      <span className="text-sm flex text-rose-800">Prop Funsion</span>
+      {/* <span className="text-sm flex text-rose-800">Prop Funsion</span> */}
     </div>
   );
 }
