@@ -29,8 +29,8 @@ const Contact = () => {
           <textarea
             name=""
             id=""
-            cols="30"
-            rows="5"
+            cols={30}
+            rows={5}
             placeholder="Enter your mesaage here...."
             className="w-full px-6 py-3 border-2 border-gray-200 rounded-xl"></textarea>
           <button className="bg-red-600 w-full text-md px-8 py-3 text-white font-semibold rounded-xl hover:bg-black dark:hover:bg-red-700 cursor-pointer">

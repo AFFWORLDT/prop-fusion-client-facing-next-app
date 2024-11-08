@@ -1,5 +1,5 @@
 import React from "react";
-import { service } from "./../global/export.ts";
+import { service } from "../global/export";
 
 
 const Services = () => {

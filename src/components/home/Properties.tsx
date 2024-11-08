@@ -1,5 +1,4 @@
 import React from "react";
-import { property } from './../global/export.ts';
 import {
   FaBath,
   FaShareAlt,
@@ -12,6 +11,7 @@ import {
   FaCamera,
 } from "react-icons/fa";
 import { MdSpaceDashboard } from "react-icons/md";
+import { property } from "../global/export";
 
 const Properties = () => {
   return (
