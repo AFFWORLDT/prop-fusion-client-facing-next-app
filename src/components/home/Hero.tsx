@@ -62,10 +62,11 @@ const Hero = () => {
               CATEGORY
             </h1>
             <select
+            defaultValue={"Option1"}
               name="selectOption"
               id="selectOption"
               className="bg-white p-2 border-b-[1px] w-full mt-2 border-[#c9c7c1] text-gray-500 text-md">
-              <option value="" disabled selected>
+              <option value="">
                 Property Category
               </option>
               <option value="Option1">Apartments</option>
